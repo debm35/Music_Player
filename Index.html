@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="player.css" />
+    <title>Music-Player</title>
+  </head>
+  <body>
+
+
+      <div class="music-container" id="music-container">
+
+          <input id="volume-control" type="range" min="0" max="100" value="50">
+
+
+
+        <div class="music-info">
+          <h2 id="title"></h2>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"> <i class="fas fa-circle"></i></div>
+          </div>
+
+          <div class="time">
+            <p id="current-time"></p>
+            <p id="total-time"></p>
+          </div>
+
+          
+
+        </div>
+  
+  
+        <audio src="songs/Call you mine.mp3" id="audio"></audio>
+
+
+
+        <div class="img-container">
+
+          <img src="images/Call you mine.jpg" alt="dsadws" id="cover">
+
+
+        </div>
+  
+  
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play-circle"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-step-forward"></i>
+          </button>
+        </div>
+      </div>
+  
+
+
+
+
+
+
+    <script src="player.js"></script>
+  </body>
+</html>
